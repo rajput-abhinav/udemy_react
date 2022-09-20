@@ -1,7 +1,8 @@
 import './ExpenseDate.css';
 
 function ExpenseDate(props) {
-  const month = props.date.toLocaleString("en-US", { month: "long" }); //helping constant
+  // console.log(props.date); 
+  const month = props.date.toLocaleString("en-US", { month: "long" });    //helping constant
   const day = props.date.toLocaleString("en-US", { day: "2-digit" });
   const year = props.date.getFullYear();
 
